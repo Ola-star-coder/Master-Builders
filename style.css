@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+}
+
+header {
+    font-family: "Single Day", cursive;
+    background: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+
+.logo {
+    font-size: 30px;
+    color: #f5e3e3;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 17px;
+    padding-top: 20px;
+    background: green;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    transition: 1s;
+}
+
+nav ul li:hover {
+    background: rgb(35, 19, 19);
+    transition: .5s;
+    cursor: pointer;
+}
