@@ -5,6 +5,7 @@
     /* font-family: "Roboto", sans-serif; */
 }
 
+/* header */
 header {
     font-family: "Single Day", cursive;
     background: black;
@@ -35,4 +36,68 @@ nav ul li:hover {
     background: rgb(35, 19, 19);
     transition: .5s;
     cursor: pointer;
+}
+
+/* The hero section */
+.hero {
+    background: #040D12;
+    color: #fff;
+    font-family: "Rubik Gemstones", system-ui;
+    height: auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-text {
+    padding: 4rem;
+    font-size: 70px;
+}
+
+.hero-text button {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #f5e3e3;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    transition: 1s;
+    outline: none;
+}
+
+.hero-text button:hover {
+    background: #f5e3e3;
+    color: #0E8388;
+    transition: .5s;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+/* The hero media screen */
+@media screen and (max-width:1087px) {
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:607px) {
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-text {
+        padding: 3rem 1rem;
+        font-size: 30px;
+    }
+
+    .hero-text h2 {
+        padding-bottom: 2rem;
+    }
 }
