@@ -101,3 +101,79 @@ nav ul li:hover {
         padding-bottom: 2rem;
     }
 }
+
+.level {
+    padding: 2rem;
+    background: #fff;
+}
+
+.levels-head {
+    text-align: center;
+}
+
+.levels-head h2 {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.levels-head h3 {
+    padding-top: 1rem;
+}
+
+.levels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+}
+
+.code {
+    text-align: center;
+    margin: 1rem;
+    transition: 1s;
+}
+
+.code:hover {
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.code img {
+    width: 90%;
+}
+
+/* lower than ipad //for mobile phones */
+@media screen and (max-width:710px) {
+    .levels {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem 0rem;
+    }
+
+    .code img {
+        width: 100%;
+    }
+
+    .level {
+        padding: 1rem 0rem;
+        background: #fff;
+    }
+}
+
+/* had to make this for ipads alone */
+@media screen and (min-width:711px) and (max-width:1080px) {
+    .levels {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 0rem;
+    }
+
+    .code img {
+        width: 100%;
+    }
+
+    .level {
+        padding: 1rem 0rem;
+        background: #fff;
+    }
+}
