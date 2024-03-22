@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Roboto", sans-serif; */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
 }
 
 /* header */
@@ -113,7 +116,6 @@ nav ul li:hover {
 
 .levels-head h2 {
     font-size: 40px;
-    font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
 }
 
@@ -175,5 +177,60 @@ nav ul li:hover {
     .level {
         padding: 1rem 0rem;
         background: #fff;
+    }
+}
+
+
+.cart {
+    text-align: center;
+    padding: 1rem;
+}
+
+.cart-head h2 {
+    color: #494949;
+    font-size: 40px;
+}
+
+.carts {
+    padding: 2rem 1rem;
+    /* The main grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cart-img img {
+    width: 90%;
+}
+
+.cart-content {
+    padding: 1rem 0rem;
+}
+
+.cart-content h3 {
+    padding: 1rem 0rem;
+}
+
+@media screen and (max-width:1081px) {
+    .carts {
+        padding: 2rem 1rem;
+        /* The main grid */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:608px) {
+    .carts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cart-img img {
+        width: 100%;
+    }
+
+    .cart {
+        text-align: center;
+        padding: 1rem 0rem;
     }
 }
