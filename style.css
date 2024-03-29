@@ -105,6 +105,7 @@ nav ul li:hover {
     }
 }
 
+/*  The two main cart after //the header(hero) */
 .level {
     padding: 2rem;
     background: #fff;
@@ -181,6 +182,7 @@ nav ul li:hover {
 }
 
 
+/* The main cart section */
 .cart {
     text-align: center;
     padding: 1rem;
@@ -202,6 +204,7 @@ nav ul li:hover {
     width: 90%;
 }
 
+/* The cart content */
 .cart-content {
     padding: 1rem 0rem;
 }
@@ -210,6 +213,7 @@ nav ul li:hover {
     padding: 1rem 0rem;
 }
 
+/*Media for tablet */
 @media screen and (max-width:1081px) {
     .carts {
         padding: 2rem 1rem;
@@ -219,6 +223,7 @@ nav ul li:hover {
     }
 }
 
+/* Media for mobike screen */
 @media screen and (max-width:608px) {
     .carts {
         display: grid;
@@ -232,5 +237,76 @@ nav ul li:hover {
     .cart {
         text-align: center;
         padding: 1rem 0rem;
+    }
+}
+
+/* The news section */
+
+.news {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* The news header */
+.news-head {
+    padding: 2rem 0rem;
+}
+
+.news-head h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.news-content {
+    padding: 2rem 1rem;
+    text-align: left;
+}
+
+.news-content p {
+    padding: 1rem 0rem;
+}
+
+.news-content h3 {
+    font-size: 25px;
+}
+
+.news-img img {
+    width: 100%;
+}
+
+@media screen and (max-width:1123px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-content h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:647px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-content h3 {
+        font-size: 20px;
+    }
+
+    .news {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .news-content {
+        padding: 2rem 0rem;
+        text-align: left;
     }
 }
