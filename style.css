@@ -111,6 +111,7 @@ nav ul li:hover {
     background: #fff;
 }
 
+/* The head of the two cart */
 .levels-head {
     text-align: center;
 }
@@ -124,6 +125,7 @@ nav ul li:hover {
     padding-top: 1rem;
 }
 
+/* The next cart section which is women and men fashion */
 .levels {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -244,12 +246,12 @@ nav ul li:hover {
 
 .news {
     padding: 2rem;
-    text-align: center;
 }
 
 /* The news header */
 .news-head {
     padding: 2rem 0rem;
+    text-align: center;
 }
 
 .news-head h2 {
@@ -264,11 +266,11 @@ nav ul li:hover {
 
 .news-content {
     padding: 2rem 1rem;
-    text-align: left;
 }
 
 .news-content p {
     padding: 1rem 0rem;
+    text-align: left;
 }
 
 .news-content h3 {
@@ -302,11 +304,81 @@ nav ul li:hover {
 
     .news {
         padding: 1rem;
-        text-align: center;
     }
 
     .news-content {
         padding: 2rem 0rem;
-        text-align: left;
     }
+}
+
+/* instagram pics */
+
+.instagram {
+    padding: 5rem 1rem;
+}
+
+/* The instagram header */
+.instagram-head {
+    text-align: center;
+}
+
+.instagram-head h2 {
+    font-size: 50px;
+}
+
+/* The grid combining the two grids together */
+.insta-grid {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* The one image alone */
+.alone-insta img {
+    width: 100%;
+}
+
+/* This is the grid for the four images */
+.insta-grids {
+    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.insta-grids img {
+    width: 100%;
+}
+
+@media screen and (max-width:747px) {
+    .insta-grid {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instagram-head h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:523px) {
+    .insta-grids {
+        gap: 7px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instagram {
+        padding: 5rem 0rem;
+    }
+
+    .instagram-head h2 {
+        font-size: 25px;
+    }
+}
+
+/* The last p element of the website */
+body p {
+    text-align: center;
+    padding-bottom: 5px;
 }
